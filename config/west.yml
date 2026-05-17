@@ -5,7 +5,7 @@ manifest:
     - name: kumamuk-git
       url-base: https://github.com/kumamuk-git
     - name: caksoylar // 追記
-      url-base: https://github.com/caksoylar
+      url-base: https://github.com/caksoylar/zmk-rgbled-widget
   projects:
     - name: zmk
       remote: zmkfirmware
