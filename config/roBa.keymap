@@ -101,10 +101,10 @@
 
         NUM {
             bindings = <
-&kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                              &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS    &none          &none       &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp EQUAL      &none       &none   &none   &none   &none   &kp F11
-&trans        &trans        &trans        &trans        &trans      &trans         &kp DELETE  &trans                          &kp F12
+&kp ASTERISK             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                              &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&kp SLASH                &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS    &none          &none       &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&mt LEFT_SHIFT NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp EQUAL      &none       &none   &none   &none   &none   &kp F11
+&trans                   &trans        &trans        &trans        &trans      &trans         &kp DELETE  &trans                          &kp F12
             >;
         };
 
@@ -130,10 +130,10 @@
 
         MOUSE {
             bindings = <
-&none           &none           &msc SCRL_UP    &none            &none                       &none   &none     &none     &none     &none
-&none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none   &none       &none   &none   &mkp MB1  &mkp MB3  &mkp MB2  &none
-&kp LEFT_SHIFT  &none           &none           &none            &none   &none       &none   &none   &none     &none     &none     &none
-&trans          &trans          &trans          &trans           &trans  &trans      &trans  &trans                                &none
+&none           &none           &msc SCRL_UP    &none            &none                           &none   &none     &none     &none     &none
+&none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none   &none       &none       &none   &mkp MB1  &mkp MB3  &mkp MB2  &none
+&kp LEFT_SHIFT  &none           &none           &none            &none   &none       &none       &none   &none     &none     &none     &none
+&trans          &trans          &trans          &trans           &trans  &trans      &kp DELETE  &trans                                &none
             >;
         };
 
