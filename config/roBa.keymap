@@ -119,10 +119,10 @@
 
         ARROW {
             bindings = <
-&kp LC(W)   &kp LS(LC(TAB))         &kp UP_ARROW    &kp LC(TAB)              &none                           &kp HOME  &kp C_AC_BACK   &kp UP_ARROW    &kp C_AC_FORWARD  &kp PAGE_UP
-&none       &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &none   &none       &none       &kp END   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp PAGE_DOWN
-&kp LA(F4)  &kp LG(LS(LEFT_ARROW))  &none           &kp LG(LS(RIGHT_ARROW))  &none   &none       &none       &none     &none           &none           &none             &kp RIGHT_SHIFT
-&trans      &trans                  &trans          &trans                   &trans  &trans      &kp DELETE  &trans                                                      &none
+&kp LC(W)       &kp LS(LC(TAB))         &kp UP_ARROW    &kp LC(TAB)              &none                           &kp HOME  &kp C_AC_BACK   &kp UP_ARROW    &kp C_AC_FORWARD  &kp PAGE_UP
+&kp LA(F4)      &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &none   &none       &none       &kp END   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp PAGE_DOWN
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &none           &kp LG(LS(RIGHT_ARROW))  &none   &none       &none       &none     &none           &none           &none             &kp RIGHT_SHIFT
+&trans          &trans                  &trans          &trans                   &trans  &trans      &kp DELETE  &trans                                                      &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
