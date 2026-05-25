@@ -12,6 +12,7 @@
 };
 
 &trackball {
+// automouse-layer = <4>;
     scroll-layers = <5>;
 
     // arrows {
@@ -25,11 +26,6 @@
     //     wait-ms = <5>;
     //     tap-ms = <5>;
     // };
-};
-
-&mkp_input_listener {
-    // マウスキーを押したらAMLを500ms延長
-    input-processors = <&zip_temp_layer 4 300>;
 };
 
 / {
