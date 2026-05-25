@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // マウススクロール量設定
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &mt {
@@ -73,6 +74,7 @@
         };
 
         // マウススクロール追加
+
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
@@ -88,10 +90,10 @@
 
         default_layer {
             bindings = <
-&lt 6 Q           &kp W         &kp E         &kp R                        &kp T                                            &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &lt 5 S       &kp D         &kp F                        &kp G        &kp LS(LG(S))      &kp LANGUAGE_1   &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &none              &none            &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&to 4             &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANGUAGE_2  &lt 1 SPACE  &lt 3 TAB          &lt 3 BACKSPACE  &lt 2 ENTER                             &mt RIGHT_ALT BACKSLASH
+&lt 6 Q             &kp W         &kp E         &kp R                        &kp T                                            &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A               &lt 5 S       &kp D         &kp F                        &kp G        &kp LS(LG(S))      &kp LANGUAGE_1   &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V                        &kp B        &none              &none            &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&lt 4 LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANGUAGE_2  &lt 1 SPACE  &lt 3 TAB          &lt 3 BACKSPACE  &lt 2 ENTER                             &mt RIGHT_ALT BACKSLASH
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
