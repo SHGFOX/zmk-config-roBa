@@ -22,6 +22,11 @@
 
         input-processors = <&zip_temp_layer 4 300>; /* オートマウスレイヤーの指定とトラボ操作及びマウスボタン押下後に滞留する時間 */
     };
+
+    mkp_input_listener {
+        // マウスキーを押したらAMLを延長
+        input-processors = <&zip_temp_layer 4 300>;
+    };
 };
 
 / {
