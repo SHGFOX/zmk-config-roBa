@@ -42,6 +42,11 @@
     >;
 };
 
+&mkp_input_listener {
+    // マウスキーを押したらAMLを延長
+    input-processors = <&zip_temp_layer 4 300>;
+};
+
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
