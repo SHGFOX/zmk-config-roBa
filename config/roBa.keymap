@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // マウススクロール量設定
-
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &mt {
@@ -74,7 +73,6 @@
         };
 
         // マウススクロール追加
-
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
@@ -99,7 +97,8 @@
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
-        NUM {
+        layer1 {
+            label = "NUMBER";
             bindings = <
 &kp F1          &kp F2  &kp F3  &kp F4   &kp F5                           &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS
 &kp F6          &kp F7  &kp F8  &kp F9   &kp F10  &none       &none       &kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS
@@ -108,7 +107,8 @@
             >;
         };
 
-        SYMBOL {
+        layer2 {
+            label = "SYMBOL";
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp DOLLAR  &kp PERCENT                                           &kp CARET  &kp AMPERSAND         &kp ASTERISK           &kp UNDERSCORE     &kp MINUS
 &kp CAPSLOCK     &kp GRAVE    &kp TILDE  &none       &none        &kp LC(LA(KP_NUMBER_0))      &none       &none      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE
@@ -117,7 +117,8 @@
             >;
         };
 
-        ARROW {
+        layer3 {
+            label = "ARROW";
             bindings = <
 &kp LC(W)       &kp LS(LC(TAB))         &kp UP_ARROW    &kp LC(TAB)              &none                           &kp HOME  &kp C_AC_BACK   &kp UP_ARROW    &kp C_AC_FORWARD  &kp PAGE_UP
 &kp LA(F4)      &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &none   &none       &none       &kp END   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp PAGE_DOWN
@@ -128,7 +129,8 @@
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
-        MOUSE {
+        layer4 {
+            label = "MOUSE";
             bindings = <
 &none           &none           &msc SCRL_UP    &none            &none                          &none   &none     &none     &none     &none
 &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none   &none      &none       &none   &mkp MB1  &mkp MB3  &mkp MB2  &none
@@ -137,7 +139,8 @@
             >;
         };
 
-        SCROLL {
+        layer5 {
+            label = "SCROLL";
             bindings = <
 &none   &none   &none   &none   &none                          &none   &none       &none              &none            &none
 &none   &none   &none   &none   &none   &none      &none       &none   &none       &kp C_PLAY_PAUSE   &none            &none
@@ -146,7 +149,8 @@
             >;
         };
 
-        layer_6 {
+        layer6 {
+            label = "DEVICE";
             bindings = <
 &none   &none   &none   &none   &none                            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
 &none   &none   &none   &none   &none   &none       &none        &none         &none         &none         &none           &none
