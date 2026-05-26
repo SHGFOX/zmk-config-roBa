@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 /* マウススクロール量設定 */
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &mt {
@@ -62,6 +63,7 @@
         };
 
         /* マウススクロール追加 */
+
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
@@ -109,10 +111,10 @@
         layer3 {
             label = "ARROW";
             bindings = <
-&none           &kp LG(LEFT_ARROW)      &kp UP_ARROW    &kp LG(RIGHT_ARROW)      &none                           &kp LS(LC(TAB))   &kp HOME        &kp UP_ARROW    &kp END            &kp LC(TAB)
-&none           &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &none   &none       &none       &kp C_AC_BACK     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp C_AC_FORWARD
-&none           &kp LG(LS(LEFT_ARROW))  &none           &kp LG(LS(RIGHT_ARROW))  &none   &none       &none       &kp C_PLAY_PAUSE  &kp PAGE_UP     &kp PAGE_DOWN   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
-&kp LEFT_SHIFT  &trans                  &trans          &kp DELETE               &trans  &trans      &kp DELETE  &trans                                                               &kp C_MUTE
+&none           &kp LG(LEFT_ARROW)      &kp UP_ARROW    &kp LG(RIGHT_ARROW)      &none                           &kp HOME          &kp C_AC_BACK    &kp UP_ARROW    &kp C_AC_FORWARD   &kp PAGE_UP
+&none           &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &none   &none       &none       &kp END           &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp PAGE_DOWN
+&none           &kp LG(LS(LEFT_ARROW))  &none           &kp LG(LS(RIGHT_ARROW))  &none   &none       &none       &kp C_PLAY_PAUSE  &kp LS(LC(TAB))  &kp LC(TAB)     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+&kp LEFT_SHIFT  &trans                  &trans          &kp DELETE               &trans  &trans      &kp DELETE  &trans                                                                &kp C_MUTE
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
