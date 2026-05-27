@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 /* マウススクロール量設定 */
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &mt {
@@ -62,6 +63,7 @@
         };
 
         /* マウススクロール追加 */
+
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
@@ -77,10 +79,10 @@
 
         default_layer {
             bindings = <
-&lt 4 Q         &kp W         &kp E         &kp R                        &kp T                                             &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))         &none          &kp H        &kp J  &lt 2 K    &kp L    &kp SEMICOLON
-&kp Z           &kp X         &kp C         &kp V                        &kp B        &none                 &none          &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANGUAGE_2  &lt 2 SPACE  &lt 1 LANGUAGE_1      &kp BACKSPACE  &lt 3 ENTER                             &mt RIGHT_ALT BACKSLASH
+&lt 4 Q         &kp W         &kp E         &kp R                        &kp T                                               &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A           &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))         &none            &kp H        &kp J  &lt 2 K    &kp L    &kp SEMICOLON
+&kp Z           &kp X         &kp C         &kp V                        &kp B        &none                 &none            &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANGUAGE_2  &lt 1 SPACE  &lt 3 LANGUAGE_1      &lt 3 BACKSPACE  &lt 2 ENTER                             &mt RIGHT_ALT BACKSLASH
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -90,7 +92,7 @@
             label = "NUMBER";
             bindings = <
 &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                              &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&none           &none         &none         &none         &kp PRINTSCREEN  &none        &none       &none         &mkp MB1      &mkp MB3      &mkp MB2      &none
+&kp CAPSLOCK    &none         &none         &none         &kp PRINTSCREEN  &none        &none       &none         &mkp MB1      &mkp MB3      &mkp MB2      &none
 &kp F1          &kp F2        &kp F3        &kp F4        &kp F5           &kp F11      &kp F12     &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
 &kp LEFT_SHIFT  &trans        &trans        &trans        &trans           &trans       &kp DELETE  &trans                                                  &trans
             >;
