@@ -59,7 +59,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "hold-preferred";
         };
 
         /* マウススクロール追加 */
@@ -75,12 +74,11 @@
         double_tap: double_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "DOUBLE_TAP";
-            flavor = "hold-preferred";
-            quick-tap-ms = <200>;
-            tapping-term-ms = <200>;
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
         };
     };
 
