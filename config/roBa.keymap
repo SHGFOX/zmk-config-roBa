@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 /* マウススクロール量設定 */
-
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &mt {
@@ -64,7 +63,6 @@
         };
 
         /* マウススクロール追加 */
-
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
