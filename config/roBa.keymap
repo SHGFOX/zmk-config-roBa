@@ -74,15 +74,15 @@
             tap-ms = <20>;
         };
 
-        lt: lt {
+        lt_hold: lt_hold {
             compatible = "zmk,behavior-hold-tap";
-            label = "LT_BACKSPACE_LAYER_TAP";
+            label = "LT_HOLD";
+            flavor = "hold-preferred";
+            quick-tap-ms = <150>;
+            tapping-term-ms = <150>;
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <150>;
-            flavor = "balanced";
         };
     };
 
