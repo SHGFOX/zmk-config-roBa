@@ -60,8 +60,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            flavor = "tap-preferred";
+            flavor = "hold-preferred";
         };
 
         /* マウススクロール追加 */
@@ -74,6 +73,17 @@
 
             tap-ms = <20>;
         };
+
+        lt: lt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_BACKSPACE_LAYER_TAP";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
@@ -81,10 +91,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                                                &kp Y                   &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &lt 2 D       &kp F                        &kp G                   &kp LS(LG(S))                    &none                       &kp H                   &kp J  &lt 2 K    &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B                   &none                            &none                       &kp N                   &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANGUAGE_2  &lt_to_layer_0 1 SPACE  &lt_to_layer_0 3 LANGUAGE_1      &lt_to_layer_0 3 BACKSPACE  &lt_to_layer_0 2 ENTER                             &mt RIGHT_ALT BACKSLASH
+&kp Q             &kp W         &kp E         &kp R                        &kp T                                                                     &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &lt 2 D       &kp F                        &kp G                   &kp LS(LG(S))                    &none            &kp H        &kp J  &lt 2 K    &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B                   &none                            &none            &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANGUAGE_2  &lt_to_layer_0 1 SPACE  &lt_to_layer_0 3 LANGUAGE_1      &lt 3 BACKSPACE  &lt 2 ENTER                             &mt RIGHT_ALT BACKSLASH
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
