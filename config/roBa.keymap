@@ -11,6 +11,11 @@
     quick-tap-ms = <0>;
 };
 
+&lt {
+    quick-tap-ms = <300>;
+    flavor = "balanced";
+};
+
 &trackball {
     scroll-layers = <2>;
 
@@ -36,7 +41,7 @@
             key-positions = <39 40>;
         };
 
-        Tab {
+        tab {
             bindings = <&kp TAB>;
             key-positions = <12 13>;
         };
